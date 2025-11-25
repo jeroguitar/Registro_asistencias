@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial
+scale=1.0">
+  <title>Registro de Asistencias</title>
+  <link rel="icon" href="./images/code.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <main class="container">
+    <h1>Registro de Asistencias</h1>
+    <form id="attendance-form">
+      <input id="student-input" type="text" placeholder="Nombre del estudiante..." autocomplete="off" />
+      <button type="submit">Registrar</button>
+    </form>
+    <ul id="attendance-list"></ul>
+    <button id="generate-pdf" class="btn-pdf">Generar Informe
+      PDF</button>
+  </main>
+
+  <!-- Librería jsPDF desde CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.
+ min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
